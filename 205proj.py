@@ -8,11 +8,11 @@ def calculate_distance(x, y, features):
 
 def nearest_neighbor(data, label, features):
     correct = 0
-    for k in range(len(data)):  # loop instances
+    for k in range(len(data)): 
         nearest_dist = float('inf')  # track nearest neighbor distance
         nearest_idx = 0  # track nearest neighbor location
 
-        for i in range(len(data)):  # loop instances
+        for i in range(len(data)):  
             if k == i:
                 pass
             else:
@@ -138,11 +138,6 @@ def backward_feature_selection(data, labels):
             )
     print(message)
     return best_selected_features
-
-    
-    
-
-    
     
 def main():
     print('---------- Welcome to Feature Selection ----------\n')
@@ -152,13 +147,14 @@ def main():
     choice = int(input('Type the number of the algorithm you want to run.\n'
                 '  1) Forward Selection\n'
                 '  2) Backward Elimination\n'))
-    # file_name = "/Users/xiaozichao/205proj/small22.txt"
+
     with open(file_name, 'r') as raw_data:
         for i, line in enumerate(raw_data):
             line = line.strip().split()
             labels.append(float(line[0]))
             instances.append([float(j) for j in line[1:]])
 
+    # sample the data to speed up
     if file_name == "xlarge12.txt":
         test_proportion = 0.4
         data = list(zip(labels, instances))
