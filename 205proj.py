@@ -1,6 +1,7 @@
 from math import sqrt
 import copy
 import random
+import csv
 
 def calculate_distance(x, y, features):
     dist = sum((x[feature] - y[feature]) ** 2 for feature in features)
@@ -139,6 +140,25 @@ def backward_feature_selection(data, labels):
     print(message)
     return best_selected_features
     
+def read_data(file_name, label, instances):
+    with open(file_name, 'r') as file:
+        reader = csv.reader(file)
+        for line in reader:
+            if len(line) >= 5:
+                label.append(line[4])
+                instances.append([float(j) for j in line[:4]])
+    return label, instances
+
+def sample_data(instances):
+    test_proportion = 0.4
+    data = list(zip(labels, instances))
+    random.shuffle(data)
+    num_test = int(len(data) * test_proportion)
+    sample_data = data[num_test:]
+    labels, instances = zip(*sample_data)
+    return labels, instances
+
+
 def main():
     print('---------- Welcome to Feature Selection ----------\n')
     labels = []
@@ -147,24 +167,21 @@ def main():
     choice = int(input('Type the number of the algorithm you want to run.\n'
                 '  1) Forward Selection\n'
                 '  2) Backward Elimination\n'))
+    if file_name == "data/iris.data":
+        labels, instances = read_data(file_name, labels, instances)
+    else:
+        with open(file_name, 'r') as raw_data:
+            for i, line in enumerate(raw_data):
+                line = line.strip().split()
+                labels.append(float(line[0]))
+                instances.append([float(j) for j in line[1:]])
 
-    with open(file_name, 'r') as raw_data:
-        for i, line in enumerate(raw_data):
-            line = line.strip().split()
-            labels.append(float(line[0]))
-            instances.append([float(j) for j in line[1:]])
-
-    # sample the data to speed up
-    if file_name == "xlarge12.txt":
-        test_proportion = 0.4
-        data = list(zip(labels, instances))
-        random.shuffle(data)
-        num_test = int(len(data) * test_proportion)
-        sample_data = data[num_test:]
-        labels, instances = zip(*sample_data)
-        print("label:", len(labels))
-        print("instances:", len(instances))
-        print("features:", len(instances[0]))
+        # sample the data to speed up
+        if file_name == "data/xlarge12.txt":
+            labels, instances = sample_data
+            print("label:", len(labels))
+            print("instances:", len(instances))
+            print("features:", len(instances[0]))
 
     feature_number = len(instances[0])
     instance_number = len(instances)
