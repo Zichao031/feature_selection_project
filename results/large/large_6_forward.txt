@@ -1,0 +1,341 @@
+---------- Welcome to Feature Selection ----------
+
+Type in the name of the file to test: 
+Type the number of the algorithm you want to run.
+  1) Forward Selection
+  2) Backward Elimination
+This dataset has 20 features (not including the class attribute), with 2000 instances.
+
+Running nearest neighbor with all 20 features, using "leaving-one-out" evaluation, I get an accuracy of 70.8%
+
+Beginning search.
+
+Using feature(s) 1 accuracy is 69.25
+Using feature(s) 2 accuracy is 68.55
+Using feature(s) 3 accuracy is 68.85
+Using feature(s) 4 accuracy is 68.60
+Using feature(s) 5 accuracy is 70.50
+Using feature(s) 6 accuracy is 67.75
+Using feature(s) 7 accuracy is 68.10
+Using feature(s) 8 accuracy is 66.65
+Using feature(s) 9 accuracy is 84.15
+Using feature(s) 10 accuracy is 67.95
+Using feature(s) 11 accuracy is 67.75
+Using feature(s) 12 accuracy is 69.00
+Using feature(s) 13 accuracy is 68.45
+Using feature(s) 14 accuracy is 68.85
+Using feature(s) 15 accuracy is 67.50
+Using feature(s) 16 accuracy is 65.75
+Using feature(s) 17 accuracy is 72.00
+Using feature(s) 18 accuracy is 66.95
+Using feature(s) 19 accuracy is 69.55
+Using feature(s) 20 accuracy is 68.65
+
+
+Feature set 9 was best, accuracy is 84.15
+
+
+Using feature(s) 9, 1 accuracy is 84.40
+Using feature(s) 9, 2 accuracy is 85.55
+Using feature(s) 9, 3 accuracy is 83.40
+Using feature(s) 9, 4 accuracy is 82.45
+Using feature(s) 9, 5 accuracy is 82.45
+Using feature(s) 9, 6 accuracy is 85.05
+Using feature(s) 9, 7 accuracy is 83.80
+Using feature(s) 9, 8 accuracy is 82.85
+Using feature(s) 9, 10 accuracy is 84.15
+Using feature(s) 9, 11 accuracy is 85.05
+Using feature(s) 9, 12 accuracy is 83.35
+Using feature(s) 9, 13 accuracy is 85.15
+Using feature(s) 9, 14 accuracy is 84.75
+Using feature(s) 9, 15 accuracy is 84.70
+Using feature(s) 9, 16 accuracy is 84.70
+Using feature(s) 9, 17 accuracy is 97.35
+Using feature(s) 9, 18 accuracy is 83.80
+Using feature(s) 9, 19 accuracy is 83.45
+Using feature(s) 9, 20 accuracy is 85.45
+
+
+Feature set 9, 17 was best, accuracy is 97.35
+
+
+Using feature(s) 9, 17, 1 accuracy is 94.55
+Using feature(s) 9, 17, 2 accuracy is 94.25
+Using feature(s) 9, 17, 3 accuracy is 93.70
+Using feature(s) 9, 17, 4 accuracy is 93.75
+Using feature(s) 9, 17, 5 accuracy is 94.20
+Using feature(s) 9, 17, 6 accuracy is 94.35
+Using feature(s) 9, 17, 7 accuracy is 94.60
+Using feature(s) 9, 17, 8 accuracy is 93.50
+Using feature(s) 9, 17, 10 accuracy is 94.00
+Using feature(s) 9, 17, 11 accuracy is 95.40
+Using feature(s) 9, 17, 12 accuracy is 94.65
+Using feature(s) 9, 17, 13 accuracy is 95.50
+Using feature(s) 9, 17, 14 accuracy is 94.10
+Using feature(s) 9, 17, 15 accuracy is 94.70
+Using feature(s) 9, 17, 16 accuracy is 94.75
+Using feature(s) 9, 17, 18 accuracy is 94.45
+Using feature(s) 9, 17, 19 accuracy is 94.50
+Using feature(s) 9, 17, 20 accuracy is 94.00
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13 was best, accuracy is 95.50
+
+
+Using feature(s) 9, 17, 13, 1 accuracy is 90.80
+Using feature(s) 9, 17, 13, 2 accuracy is 90.80
+Using feature(s) 9, 17, 13, 3 accuracy is 90.95
+Using feature(s) 9, 17, 13, 4 accuracy is 91.95
+Using feature(s) 9, 17, 13, 5 accuracy is 90.35
+Using feature(s) 9, 17, 13, 6 accuracy is 92.15
+Using feature(s) 9, 17, 13, 7 accuracy is 91.55
+Using feature(s) 9, 17, 13, 8 accuracy is 90.75
+Using feature(s) 9, 17, 13, 10 accuracy is 90.15
+Using feature(s) 9, 17, 13, 11 accuracy is 92.85
+Using feature(s) 9, 17, 13, 12 accuracy is 91.65
+Using feature(s) 9, 17, 13, 14 accuracy is 91.80
+Using feature(s) 9, 17, 13, 15 accuracy is 91.45
+Using feature(s) 9, 17, 13, 16 accuracy is 91.45
+Using feature(s) 9, 17, 13, 18 accuracy is 91.40
+Using feature(s) 9, 17, 13, 19 accuracy is 91.00
+Using feature(s) 9, 17, 13, 20 accuracy is 90.80
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11 was best, accuracy is 92.85
+
+
+Using feature(s) 9, 17, 13, 11, 1 accuracy is 88.70
+Using feature(s) 9, 17, 13, 11, 2 accuracy is 88.80
+Using feature(s) 9, 17, 13, 11, 3 accuracy is 88.65
+Using feature(s) 9, 17, 13, 11, 4 accuracy is 89.15
+Using feature(s) 9, 17, 13, 11, 5 accuracy is 88.55
+Using feature(s) 9, 17, 13, 11, 6 accuracy is 88.00
+Using feature(s) 9, 17, 13, 11, 7 accuracy is 88.80
+Using feature(s) 9, 17, 13, 11, 8 accuracy is 88.80
+Using feature(s) 9, 17, 13, 11, 10 accuracy is 88.65
+Using feature(s) 9, 17, 13, 11, 12 accuracy is 88.50
+Using feature(s) 9, 17, 13, 11, 14 accuracy is 89.75
+Using feature(s) 9, 17, 13, 11, 15 accuracy is 88.25
+Using feature(s) 9, 17, 13, 11, 16 accuracy is 89.05
+Using feature(s) 9, 17, 13, 11, 18 accuracy is 88.90
+Using feature(s) 9, 17, 13, 11, 19 accuracy is 88.70
+Using feature(s) 9, 17, 13, 11, 20 accuracy is 89.00
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14 was best, accuracy is 89.75
+
+
+Using feature(s) 9, 17, 13, 11, 14, 1 accuracy is 85.70
+Using feature(s) 9, 17, 13, 11, 14, 2 accuracy is 86.10
+Using feature(s) 9, 17, 13, 11, 14, 3 accuracy is 87.20
+Using feature(s) 9, 17, 13, 11, 14, 4 accuracy is 85.95
+Using feature(s) 9, 17, 13, 11, 14, 5 accuracy is 85.85
+Using feature(s) 9, 17, 13, 11, 14, 6 accuracy is 85.75
+Using feature(s) 9, 17, 13, 11, 14, 7 accuracy is 86.00
+Using feature(s) 9, 17, 13, 11, 14, 8 accuracy is 86.00
+Using feature(s) 9, 17, 13, 11, 14, 10 accuracy is 85.25
+Using feature(s) 9, 17, 13, 11, 14, 12 accuracy is 85.10
+Using feature(s) 9, 17, 13, 11, 14, 15 accuracy is 85.95
+Using feature(s) 9, 17, 13, 11, 14, 16 accuracy is 86.65
+Using feature(s) 9, 17, 13, 11, 14, 18 accuracy is 86.85
+Using feature(s) 9, 17, 13, 11, 14, 19 accuracy is 86.30
+Using feature(s) 9, 17, 13, 11, 14, 20 accuracy is 84.20
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3 was best, accuracy is 87.20
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 1 accuracy is 82.35
+Using feature(s) 9, 17, 13, 11, 14, 3, 2 accuracy is 83.15
+Using feature(s) 9, 17, 13, 11, 14, 3, 4 accuracy is 83.50
+Using feature(s) 9, 17, 13, 11, 14, 3, 5 accuracy is 83.65
+Using feature(s) 9, 17, 13, 11, 14, 3, 6 accuracy is 82.85
+Using feature(s) 9, 17, 13, 11, 14, 3, 7 accuracy is 82.20
+Using feature(s) 9, 17, 13, 11, 14, 3, 8 accuracy is 83.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 10 accuracy is 83.35
+Using feature(s) 9, 17, 13, 11, 14, 3, 12 accuracy is 82.65
+Using feature(s) 9, 17, 13, 11, 14, 3, 15 accuracy is 82.00
+Using feature(s) 9, 17, 13, 11, 14, 3, 16 accuracy is 82.50
+Using feature(s) 9, 17, 13, 11, 14, 3, 18 accuracy is 83.55
+Using feature(s) 9, 17, 13, 11, 14, 3, 19 accuracy is 83.70
+Using feature(s) 9, 17, 13, 11, 14, 3, 20 accuracy is 82.75
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19 was best, accuracy is 83.70
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 1 accuracy is 80.85
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 2 accuracy is 81.20
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 4 accuracy is 80.60
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 5 accuracy is 81.85
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 6 accuracy is 81.55
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 7 accuracy is 80.30
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 8 accuracy is 80.65
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 10 accuracy is 80.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 12 accuracy is 79.70
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 15 accuracy is 80.20
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 16 accuracy is 81.50
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18 accuracy is 82.60
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 20 accuracy is 80.55
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18 was best, accuracy is 82.60
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 1 accuracy is 78.95
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 2 accuracy is 80.65
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 4 accuracy is 79.75
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 5 accuracy is 79.85
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 6 accuracy is 79.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7 accuracy is 80.80
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 8 accuracy is 78.35
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 10 accuracy is 78.05
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 12 accuracy is 79.90
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 15 accuracy is 80.15
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 16 accuracy is 80.25
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 20 accuracy is 80.15
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7 was best, accuracy is 80.80
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1 accuracy is 79.05
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 2 accuracy is 78.00
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 4 accuracy is 78.05
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 5 accuracy is 77.60
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 6 accuracy is 78.40
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 8 accuracy is 78.20
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 10 accuracy is 77.95
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 12 accuracy is 77.80
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 15 accuracy is 77.55
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 16 accuracy is 77.95
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 20 accuracy is 78.45
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1 was best, accuracy is 79.05
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 2 accuracy is 78.05
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 4 accuracy is 76.95
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 5 accuracy is 77.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 6 accuracy is 77.90
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 8 accuracy is 76.95
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 10 accuracy is 76.85
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 12 accuracy is 77.80
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 15 accuracy is 77.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 16 accuracy is 76.30
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20 accuracy is 78.30
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20 was best, accuracy is 78.30
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 2 accuracy is 76.30
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 4 accuracy is 75.75
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5 accuracy is 77.00
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 6 accuracy is 76.10
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 8 accuracy is 75.55
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 10 accuracy is 74.75
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 12 accuracy is 76.30
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 15 accuracy is 75.50
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 16 accuracy is 76.30
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5 was best, accuracy is 77.00
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 2 accuracy is 75.35
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 4 accuracy is 75.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 6 accuracy is 74.90
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 8 accuracy is 74.25
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 10 accuracy is 74.95
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 12 accuracy is 75.50
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 15 accuracy is 75.35
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16 accuracy is 76.00
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16 was best, accuracy is 76.00
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 2 accuracy is 74.05
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 4 accuracy is 74.15
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6 accuracy is 75.65
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 8 accuracy is 73.30
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 10 accuracy is 73.75
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 12 accuracy is 73.85
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 15 accuracy is 74.80
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6 was best, accuracy is 75.65
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 2 accuracy is 73.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 4 accuracy is 72.95
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 8 accuracy is 73.10
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 10 accuracy is 73.60
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 12 accuracy is 73.60
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15 accuracy is 73.75
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15 was best, accuracy is 73.75
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2 accuracy is 73.25
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 4 accuracy is 72.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 8 accuracy is 72.65
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 10 accuracy is 72.55
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 12 accuracy is 73.10
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2 was best, accuracy is 73.25
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 4 accuracy is 72.75
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 8 accuracy is 72.55
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 10 accuracy is 71.45
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12 accuracy is 73.65
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12 was best, accuracy is 73.65
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 4 accuracy is 72.05
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 8 accuracy is 71.80
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 10 accuracy is 70.20
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 4 was best, accuracy is 72.05
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 4, 8 accuracy is 71.05
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 4, 10 accuracy is 70.75
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 4, 8 was best, accuracy is 71.05
+
+
+Using feature(s) 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 4, 8, 10 accuracy is 70.80
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set 9, 17, 13, 11, 14, 3, 19, 18, 7, 1, 20, 5, 16, 6, 15, 2, 12, 4, 8, 10 was best, accuracy is 70.80
+
+
+Finish search. The best feature set is 9, 17, which has an accuracy of 97.35%
