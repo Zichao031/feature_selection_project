@@ -88,7 +88,7 @@ def backward_feature_selection(data, labels):
     num_features = len(data[0])
     selected_features = list(range(num_features))  # Start with all features selected
     best_selected_features = list(range(num_features))
-    best_accuracy = 0.0
+    best_accuracy = nearest_neighbor(data, labels, selected_features)
 
     while len(selected_features) > 1:
         curr_accuracy = 0.0
@@ -178,7 +178,7 @@ def main():
 
         # sample the data to speed up
         if file_name == "data/xlarge12.txt":
-            labels, instances = sample_data
+            labels, instances = sample_data(instances)
             print("label:", len(labels))
             print("instances:", len(instances))
             print("features:", len(instances[0]))
