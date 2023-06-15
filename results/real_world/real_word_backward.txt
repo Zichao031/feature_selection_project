@@ -10,31 +10,31 @@ Running nearest neighbor with all 4 features, using "leaving-one-out" evaluation
 
 Beginning search.
 
-Using feature(s) 2, 3, 4 accuracy is 95.33
-Using feature(s) 1, 3, 4 accuracy is 95.33
-Using feature(s) 1, 2, 4 accuracy is 94.67
-Using feature(s) 1, 2, 3 accuracy is 93.33
+Using feature(s) [2, 3, 4] accuracy is 95.33%
+Using feature(s) [1, 3, 4] accuracy is 95.33%
+Using feature(s) [1, 2, 4] accuracy is 94.67%
+Using feature(s) [1, 2, 3] accuracy is 93.33%
 
 
 (Warning, Accuracy has decreased. Continuing search in case of local maxima)
-Feature set 2, 3, 4 was best, accuracy is 95.33
+Feature set [2, 3, 4] was best, accuracy is 95.33%
 
 
-Using feature(s) 3, 4 accuracy is 95.33
-Using feature(s) 2, 4 accuracy is 92.00
-Using feature(s) 2, 3 accuracy is 91.33
-
-
-(Warning, Accuracy has decreased. Continuing search in case of local maxima)
-Feature set 3, 4 was best, accuracy is 95.33
-
-
-Using feature(s) 4 accuracy is 88.00
-Using feature(s) 3 accuracy is 88.00
+Using feature(s) [3, 4] accuracy is 95.33%
+Using feature(s) [2, 4] accuracy is 92.00%
+Using feature(s) [2, 3] accuracy is 91.33%
 
 
 (Warning, Accuracy has decreased. Continuing search in case of local maxima)
-Feature set 4 was best, accuracy is 88.00
+Feature set [3, 4] was best, accuracy is 95.33%
 
 
-Finish search. The best feature set is 1, 2, 3, 4, which has an accuracy of 96.00%
+Using feature(s) [4] accuracy is 88.00%
+Using feature(s) [3] accuracy is 88.00%
+
+
+(Warning, Accuracy has decreased. Continuing search in case of local maxima)
+Feature set [4] was best, accuracy is 88.00%
+
+
+Finish search. The best feature set is [1, 2, 3, 4], which has an accuracy of 96.00%

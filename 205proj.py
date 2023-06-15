@@ -45,7 +45,7 @@ def forward_feature_selection(instances, targets):
                 selected_features.append(feature)
                 accuracy = nearest_neighbor(instances, targets, selected_features)
                 # message = "Using feature(s) {} accuracy is {:.2f}".format(selected_features, accuracy)
-                message = "Using feature(s) {} accuracy is {:.2f}".format(
+                message = "Using feature(s) [{}] accuracy is {:.2f}%".format(
                             ", ".join(str(feature + 1) for feature in selected_features),
                             accuracy
                         )
@@ -54,7 +54,7 @@ def forward_feature_selection(instances, targets):
                 if accuracy > curr_accuracy:
                     curr_accuracy = accuracy
                     curr_feature = feature
-                if accuracy > best_accuracy:
+                if accuracy >= best_accuracy:
                     best_accuracy = accuracy
                     best_feature = feature
                 
@@ -66,17 +66,17 @@ def forward_feature_selection(instances, targets):
             if curr_accuracy < best_accuracy:
                 print("(Warning, Accuracy has decreased. Continuing search in case of local maxima)")
             # message = "Feature set {} was best, accuracy is {:.2f}".format(selected_features, curr_accuracy)
-            message = "Feature set {} was best, accuracy is {:.2f}".format(
+            message = "Feature set [{}] was best, accuracy is {:.2f}%".format(
                         ", ".join(str(feature + 1) for feature in selected_features),
                         curr_accuracy
                     )
             print(message)
             print("\n")
-        if best_feature is not None:
-            best_selected_features.append(best_feature)
+        if curr_accuracy == best_accuracy:
+            best_selected_features = selected_features.copy()
     
     # message = "Finish search. The best feature set is {}, which has an accuracy of {:.2f}%".format(best_selected_features, best_accuracy)
-    message = "Finish search. The best feature set is {}, which has an accuracy of {:.2f}%".format(
+    message = "Finish search. The best feature set is [{}] , which has an accuracy of {:.2f}%".format(
             ", ".join(str(feature + 1) for feature in best_selected_features),
             best_accuracy
         )
@@ -101,7 +101,7 @@ def backward_feature_selection(data, labels):
             accuracy = nearest_neighbor(data, labels, remaining_features)
 
             # message = "Using feature(s) {} accuracy is {:.2f}".format(remaining_features, accuracy)
-            message = "Using feature(s) {} accuracy is {:.2f}".format(
+            message = "Using feature(s) [{}] accuracy is {:.2f}%".format(
                         ", ".join(str(feature + 1) for feature in remaining_features),
                         accuracy
                     )
@@ -111,7 +111,7 @@ def backward_feature_selection(data, labels):
                 curr_accuracy = accuracy
                 curr_feature = feature
 
-            if accuracy > best_accuracy:
+            if accuracy >= best_accuracy:
                 best_accuracy = accuracy
                 worst_feature = feature
         
@@ -122,18 +122,18 @@ def backward_feature_selection(data, labels):
             if curr_accuracy < best_accuracy:
                 print("(Warning, Accuracy has decreased. Continuing search in case of local maxima)")
             # message = "Feature set {} was best, accuracy is {:.2f}".format(selected_features, curr_accuracy)
-            message = "Feature set {} was best, accuracy is {:.2f}".format(
+            message = "Feature set [{}] was best, accuracy is {:.2f}%".format(
                         ", ".join(str(feature + 1) for feature in selected_features),
                         curr_accuracy
                     )
             print(message)
             print("\n")
         
-        if worst_feature is not None:
-            best_selected_features.remove(worst_feature)
+        if curr_accuracy == best_accuracy:
+            best_selected_features = selected_features.copy()
     
     # message = "Finish search. The best feature set is {}, which has an accuracy of {:.2f}%".format(best_selected_features, best_accuracy)
-    message = "Finish search. The best feature set is {}, which has an accuracy of {:.2f}%".format(
+    message = "Finish search. The best feature set is [{}], which has an accuracy of {:.2f}%".format(
                 ", ".join(str(feature + 1) for feature in best_selected_features),
                 best_accuracy
             )
@@ -149,7 +149,7 @@ def read_data(file_name, label, instances):
                 instances.append([float(j) for j in line[:4]])
     return label, instances
 
-def sample_data(instances):
+def sample_data(instances, labels):
     test_proportion = 0.4
     data = list(zip(labels, instances))
     random.shuffle(data)
@@ -178,7 +178,7 @@ def main():
 
         # sample the data to speed up
         if file_name == "data/xlarge12.txt":
-            labels, instances = sample_data(instances)
+            labels, instances = sample_data(instances, labels)
             print("label:", len(labels))
             print("instances:", len(instances))
             print("features:", len(instances[0]))

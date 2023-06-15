@@ -10,34 +10,34 @@ Running nearest neighbor with all 4 features, using "leaving-one-out" evaluation
 
 Beginning search.
 
-Using feature(s) 1 accuracy is 58.67
-Using feature(s) 2 accuracy is 48.00
-Using feature(s) 3 accuracy is 88.00
-Using feature(s) 4 accuracy is 88.00
+Using feature(s) [1] accuracy is 58.67%
+Using feature(s) [2] accuracy is 48.00%
+Using feature(s) [3] accuracy is 88.00%
+Using feature(s) [4] accuracy is 88.00%
 
 
-Feature set 3 was best, accuracy is 88.00
+Feature set [3] was best, accuracy is 88.00%
 
 
-Using feature(s) 3, 1 accuracy is 90.67
-Using feature(s) 3, 2 accuracy is 91.33
-Using feature(s) 3, 4 accuracy is 95.33
+Using feature(s) [3, 1] accuracy is 90.67%
+Using feature(s) [3, 2] accuracy is 91.33%
+Using feature(s) [3, 4] accuracy is 95.33%
 
 
-Feature set 3, 4 was best, accuracy is 95.33
+Feature set [3, 4] was best, accuracy is 95.33%
 
 
-Using feature(s) 3, 4, 1 accuracy is 95.33
-Using feature(s) 3, 4, 2 accuracy is 95.33
+Using feature(s) [3, 4, 1] accuracy is 95.33%
+Using feature(s) [3, 4, 2] accuracy is 95.33%
 
 
-Feature set 3, 4, 1 was best, accuracy is 95.33
+Feature set [3, 4, 1] was best, accuracy is 95.33%
 
 
-Using feature(s) 3, 4, 1, 2 accuracy is 96.00
+Using feature(s) [3, 4, 1, 2] accuracy is 96.00%
 
 
-Feature set 3, 4, 1, 2 was best, accuracy is 96.00
+Feature set [3, 4, 1, 2] was best, accuracy is 96.00%
 
 
-Finish search. The best feature set is 3, 4, 2, which has an accuracy of 96.00%
+Finish search. The best feature set is [3, 4, 1, 2] , which has an accuracy of 96.00%
